@@ -24,8 +24,6 @@ class Solution(object):
         self.invertTree(root.right)
         return root
 
-    from collections import deque
-
     def invertTreeBFS(self, root):
         """
         :type root: TreeNode
