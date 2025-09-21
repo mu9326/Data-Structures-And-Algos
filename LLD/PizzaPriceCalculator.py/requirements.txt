@@ -1,0 +1,34 @@
+# 1. Functional Requirements
+# These define what the system should do.
+
+# - The system must support multiple pizza sizes: Small, Medium, Large.
+# - Each size has a predefined base price (Small: $5, Medium: $7, Large: $10).
+# - The system must support different crust types (Cheesy, Random, Thin).
+# - Each crust type has an associated cost (Cheesy: $5, Random: $7, Thin: $10).
+
+# - Users can add multiple toppings to a pizza.
+# - Each topping has a name and a cost.
+
+# The system must calculate the price of a single pizza based on:
+# - Base price of the selected size
+# - Cost of selected crust
+# - Cost of all toppings
+# The system must calculate the total price for an order containing multiple pizzas.
+
+# - The system must allow multiple pizzas to be added to a single order.
+
+# 2. Non-Functional Requirements
+
+# These define how the system should behave.
+
+# Usability
+# - The system should allow easy creation of pizzas and orders via simple method calls.
+
+# Extensibility
+# - It should be easy to add new pizza sizes, crust types, or toppings in the future.
+
+# Maintainability
+# - The code should use clear object-oriented design (classes for Size, Crust, Topping, Pizza, PizzaOrder).
+
+# Accuracy
+# - Price calculation must be correct and consistent for all pizzas and orders.
