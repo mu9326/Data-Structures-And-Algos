@@ -3,13 +3,9 @@ from typing import List
 
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
-        # ababcbacadefegdehijhklij
-        # size = 7, end = 15
-
         size = 0
         end = 0
         res = []
-        # res = [9]
 
         # first pass
         # populate the hashmap with char : lastIndex
@@ -17,6 +13,7 @@ class Solution:
         for i, c in enumerate(s):
             last_index[c] = i
 
+        # second pass
         # iterate over the string:
         for i in range(len(s)):
             # check the lastIdex of current char
@@ -27,7 +24,6 @@ class Solution:
             # update the size
             size += 1
 
-            # if size + res[-1] > end:
             if i == end:
                 # append size to result
                 res.append(size)
