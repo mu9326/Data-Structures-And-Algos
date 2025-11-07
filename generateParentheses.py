@@ -1,4 +1,5 @@
 from typing import List
+import traceback
 
 
 class Solution:
@@ -6,7 +7,11 @@ class Solution:
         stack, res = [], []
 
         def backtrack(openN, closedN):
-            # base case
+            # Print depth and current state
+            depth = len(traceback.extract_stack())
+            print(
+                f"{'  ' * depth}Depth: {depth}, Current: {''.join(stack)}, Open: {openN}, Close: {closedN}"
+            )  # base case
             # if hashmap values are equal to n:
             if openN == closedN == n:
                 # append the stack to the res
